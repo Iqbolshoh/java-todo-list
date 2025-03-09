@@ -2,6 +2,9 @@
 
 **Java To-Do List** is a simple and interactive task management application built using **Java Swing**. It allows users to add, edit, remove, and mark tasks as completed with an intuitive UI.  
 
+## 📸 Preview
+![App Screenshot](./banner.png)
+
 ---
 
 ## 🚀 Features  
