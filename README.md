@@ -1,3 +1,41 @@
+# 📝 Java To-Do List   
+
+**Java To-Do List** is a simple and interactive task management application built using **Java Swing**. It allows users to add, edit, remove, and mark tasks as completed with an intuitive UI.  
+
+---
+
+## 🚀 Features  
+✔ **Task Management** – Add, edit, and remove tasks easily  
+📅 **Due Date Input** – Set deadlines for tasks  
+✅ **Task Completion** – Mark tasks as completed with a checkbox  
+🎨 **Custom UI** – Enhanced task display with icons  
+💾 **Save Tasks** – Simple in-memory save functionality  
+🖥 **User-Friendly Interface** – Easy navigation and interaction  
+
+---
+
+## 🎯 How to Run  
+1. Clone the repository  
+   ```sh
+   git clone https://github.com/Iqbolshoh/java-todo-list.git
+   cd java-todo-list
+   ```
+2. Compile the project  
+   ```sh
+   javac Main.java
+   ```
+3. Run the application  
+   ```sh
+   java Main
+   ```
+
+---
+
+## 📌 Future Improvements  
+🚀 **Persistent Storage** – Save tasks to a file or database  
+📲 **Mobile Version** – Android app integration  
+🎨 **Theming Options** – Light & Dark mode
+
 ## 🖥 Technologies Used
 <div style="display: flex; flex-wrap: wrap; gap: 5px;">
     <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
