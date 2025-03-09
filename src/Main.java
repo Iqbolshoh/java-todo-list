@@ -10,115 +10,115 @@ public class Main {
     private JList<TaskItem> taskList;
     private JTextField taskField;
     private JTextField dateField;
-    private List<TaskItem> data = new ArrayList<>(); // Ma'lumotlarni saqlash uchun massiv
+    private List<TaskItem> data = new ArrayList<>(); // Array to store data
 
     public Main() {
-        // Asosiy oyna yaratish
-        JFrame frame = new JFrame("ToDo List");
+        // Create main window
+        JFrame frame = new JFrame("To-Do List");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 500); // Oyna hajmini kattalashtirish
+        frame.setSize(500, 500); // Increase window size
 
-        // Asosiy panel
+        // Main panel
         JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout(10, 10)); // Margin qo'shish
+        panel.setLayout(new BorderLayout(10, 10)); // Add margin
 
-        // Vazifalar ro'yxati
+        // Task list
         listModel = new DefaultListModel<>();
         taskList = new JList<>(listModel);
         taskList.setCellRenderer(new CustomListRenderer());
         panel.add(new JScrollPane(taskList), BorderLayout.CENTER);
 
-        // Input paneli (Vazifa va muddat kiritish uchun)
-        JPanel inputPanel = new JPanel(new GridLayout(3, 2, 10, 10)); // GridLayout va margin
-        inputPanel.add(new JLabel("Vazifa:"));
+        // Input panel (for entering task and due date)
+        JPanel inputPanel = new JPanel(new GridLayout(3, 2, 10, 10)); // GridLayout with margin
+        inputPanel.add(new JLabel("Task:"));
         taskField = new JTextField();
         inputPanel.add(taskField);
 
-        inputPanel.add(new JLabel("Muddat (dd-mm-yyyy):"));
+        inputPanel.add(new JLabel("Due Date (dd-mm-yyyy):"));
         dateField = new JTextField();
         inputPanel.add(dateField);
 
-        // Tugmalar paneli
-        JPanel buttonPanel = new JPanel(new GridLayout(1, 5, 10, 10)); // 5 ta tugma
-        JButton addButton = new JButton("Qo'shish");
-        JButton removeButton = new JButton("O'chirish");
-        JButton editButton = new JButton("Tahrirlash");
-        JButton saveButton = new JButton("Saqlash");
-        JButton toggleButton = new JButton("Bajarildi");
+        // Buttons panel
+        JPanel buttonPanel = new JPanel(new GridLayout(1, 5, 10, 10)); // 5 buttons
+        JButton addButton = new JButton("Add");
+        JButton removeButton = new JButton("Remove");
+        JButton editButton = new JButton("Edit");
+        JButton saveButton = new JButton("Save");
+        JButton toggleButton = new JButton("Completed");
 
-        // Tugmalarni qo'shish
+        // Add buttons to panel
         buttonPanel.add(addButton);
         buttonPanel.add(removeButton);
         buttonPanel.add(editButton);
         buttonPanel.add(saveButton);
         buttonPanel.add(toggleButton);
 
-        // Tugmalarga hodisa qo'shish
+        // Add action listeners to buttons
         addButton.addActionListener(e -> addTask());
         removeButton.addActionListener(e -> removeTask());
         editButton.addActionListener(e -> editTask());
         saveButton.addActionListener(e -> saveTasks());
         toggleButton.addActionListener(e -> toggleTaskStatus());
 
-        // Asosiy panelga qo'shish
+        // Add panels to main panel
         panel.add(inputPanel, BorderLayout.NORTH);
         panel.add(buttonPanel, BorderLayout.SOUTH);
 
-        // Oynaga panelni qo'shish
+        // Add panel to frame
         frame.add(panel);
         frame.setVisible(true);
     }
 
-    // Vazifa qo'shish
+    // Add a new task
     private void addTask() {
         String taskText = taskField.getText().trim();
         String dueDateText = dateField.getText().trim();
         if (!taskText.isEmpty() && !dueDateText.isEmpty()) {
             TaskItem newTask = new TaskItem(taskText, dueDateText);
-            listModel.addElement(newTask); // Ro'yxatga qo'shish
-            data.add(newTask); // Massivga qo'shish
+            listModel.addElement(newTask); // Add to list
+            data.add(newTask); // Add to array
             taskField.setText("");
             dateField.setText("");
         }
     }
 
-    // Vazifani o'chirish
+    // Remove a task
     private void removeTask() {
         int selectedIndex = taskList.getSelectedIndex();
         if (selectedIndex != -1) {
-            listModel.remove(selectedIndex); // Ro'yxatdan o'chirish
-            data.remove(selectedIndex); // Massivdan o'chirish
+            listModel.remove(selectedIndex); // Remove from list
+            data.remove(selectedIndex); // Remove from array
         }
     }
 
-    // Vazifani tahrirlash
+    // Edit a task
     private void editTask() {
         int selectedIndex = taskList.getSelectedIndex();
         if (selectedIndex != -1) {
-            String newTaskText = JOptionPane.showInputDialog("Yangi vazifani kiriting:");
-            String newDueDateText = JOptionPane.showInputDialog("Yangi muddatni kiriting (yyyy-mm-dd):");
+            String newTaskText = JOptionPane.showInputDialog("Enter new task:");
+            String newDueDateText = JOptionPane.showInputDialog("Enter new due date (yyyy-mm-dd):");
             if (newTaskText != null && newDueDateText != null) {
                 TaskItem item = listModel.getElementAt(selectedIndex);
                 item.setTask(newTaskText);
                 item.setDueDate(newDueDateText);
-                taskList.repaint(); // Ro'yxatni yangilash
+                taskList.repaint(); // Refresh list
             }
         }
     }
 
-    // Vazifani bajarilgan deb belgilash
+    // Mark task as completed
     private void toggleTaskStatus() {
         int selectedIndex = taskList.getSelectedIndex();
         if (selectedIndex != -1) {
             TaskItem item = listModel.getElementAt(selectedIndex);
             item.toggleCompleted();
-            taskList.repaint(); // Ro'yxatni yangilash
+            taskList.repaint(); // Refresh list
         }
     }
 
-    // Vazifalarni saqlash (faqat massivda saqlash)
+    // Save tasks (only in memory)
     private void saveTasks() {
-        JOptionPane.showMessageDialog(null, "Vazifalar saqlandi!");
+        JOptionPane.showMessageDialog(null, "Tasks saved!");
     }
 
     public static void main(String[] args) {
@@ -126,7 +126,7 @@ public class Main {
     }
 }
 
-// Vazifa elementlari uchun klass
+// Task class
 class TaskItem {
     private String task;
     private String dueDate;
@@ -168,7 +168,7 @@ class TaskItem {
     }
 }
 
-// Vazifalar ro'yxatini chiroyli ko'rsatish uchun renderer
+// Custom list renderer for better UI
 class CustomListRenderer extends DefaultListCellRenderer {
     private ImageIcon checkIcon = new ImageIcon("check.png");
     private ImageIcon uncheckIcon = new ImageIcon("uncheck.png");
