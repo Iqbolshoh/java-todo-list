@@ -1,40 +1,40 @@
 # 📝 Java To-Do List
 
-**Java To-Do List** is a simple and interactive task management application built using **Java Swing**. It allows users to add, edit, remove, and mark tasks as completed with an intuitive UI.  
+**Java To-Do List** is a simple and interactive task management application built using **Java Swing**. It allows users to add, edit, remove, and mark tasks as completed with an intuitive UI.
 
 ## 📸 Preview
 ![App Screenshot](./banner.png)
 
 ---
 
-## 🚀 Features  
+## 🚀 Features
 ✔ **Task Management** – Add, edit, and remove tasks easily  
 📅 **Due Date Input** – Set deadlines for tasks  
 ✅ **Task Completion** – Mark tasks as completed with a checkbox  
 🎨 **Custom UI** – Enhanced task display with icons  
 💾 **Save Tasks** – Simple in-memory save functionality  
-🖥 **User-Friendly Interface** – Easy navigation and interaction  
+🖥 **User-Friendly Interface** – Easy navigation and interaction
 
 ---
 
-## 🎯 How to Run  
-1. Clone the repository  
+## 🎯 How to Run
+1. Clone the repository
    ```sh
    git clone https://github.com/Iqbolshoh/java-todo-list.git
    cd java-todo-list
    ```
-2. Compile the project  
+2. Compile the project
    ```sh
    javac Main.java
    ```
-3. Run the application  
+3. Run the application
    ```sh
    java Main
    ```
 
 ---
 
-## 📌 Future Improvements  
+## 📌 Future Improvements
 🚀 **Persistent Storage** – Save tasks to a file or database  
 📲 **Mobile Version** – Android app integration  
 🎨 **Theming Options** – Light & Dark mode
@@ -49,11 +49,11 @@
 ## 📜 License
 This project is licensed under the **MIT License** – feel free to modify and distribute it as needed.
 
-## 🤝 Contributing  
+## 🤝 Contributing
 
 🎯 Contributions are welcome! If you have suggestions or want to enhance the project, feel free to fork the repository and submit a pull request.
 
-## 📬 Connect with Me  
+## 📬 Connect with Me
 
 💬 I love meeting new people and discussing tech, business, and creative ideas. Let’s connect! You can reach me on these platforms:
 
