@@ -21,6 +21,8 @@
 1. Clone the repository  
    ```sh
    git clone https://github.com/Iqbolshoh/java-todo-list.git
+   ```
+   ```sh
    cd java-todo-list
    ```
 2. Compile the project  
