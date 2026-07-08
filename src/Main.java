@@ -16,7 +16,7 @@ public class Main {
         // Create main window
         JFrame frame = new JFrame("To-Do List");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 500); // Increase window size
+        frame.setSize(600, 500); // Increase window size
 
         // Main panel
         JPanel panel = new JPanel();
