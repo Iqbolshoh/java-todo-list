@@ -1,119 +1,90 @@
 # 📝 Java To-Do List
 
-**Java To-Do List** is a simple and interactive task management application built using **Java Swing**. It allows users to add, edit, remove, and mark tasks as completed with an intuitive UI.  
+**Java To-Do List** is a simple **task management desktop app** built with **Java Swing**. It lets you add tasks with a due date, mark them as completed, edit or remove them, and view everything in a single clean list — all in one window, with no external dependencies.
 
-## 📸 Preview
-![App Screenshot](./banner.png)
+<p align="left">
+  <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Swing-%23007396.svg?style=for-the-badge&logo=java&logoColor=white" alt="Swing">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+</p>
 
----
+## 📚 Table of Contents
 
-## 🚀 Features  
-✔ **Task Management** – Add, edit, and remove tasks easily  
-📅 **Due Date Input** – Set deadlines for tasks  
-✅ **Task Completion** – Mark tasks as completed with a checkbox  
-🎨 **Custom UI** – Enhanced task display with icons  
-💾 **Save Tasks** – Simple in-memory save functionality  
-🖥 **User-Friendly Interface** – Easy navigation and interaction  
+- [Features](#-features)
+- [Preview](#-preview)
+- [Project Structure](#-project-structure)
+- [Installation Guide](#️-installation-guide)
+- [Technologies Used](#-technologies-used)
+- [License](#-license)
+- [Contributing](#-contributing)
+- [Connect with Me](#-connect-with-me)
 
----
+## ✨ Features
 
-## 🎯 How to Run  
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/Iqbolshoh/java-todo-list.git
-   ```
-   ```sh
-   cd java-todo-list
-   ```
-2. Compile the project  
-   ```sh
-   javac Main.java
-   ```
-3. Run the application  
-   ```sh
-   java Main
-   ```
+✅ **Add tasks:** Enter a task and a due date (`dd-mm-yyyy`) and add it to the list.
+✅ **Edit tasks:** Update the task text or due date of any selected item.
+✅ **Remove tasks:** Delete the selected task from the list.
+✅ **Mark as completed:** Toggle a task's completed status, shown with a `✓`/`✗` marker.
+✅ **Custom list rendering:** Tasks are displayed through a custom cell renderer.
 
----
+## 👀 Preview
 
-## 📌 Future Improvements  
-🚀 **Persistent Storage** – Save tasks to a file or database  
-📲 **Mobile Version** – Android app integration  
-🎨 **Theming Options** – Light & Dark mode
+![App Preview](./banner.png)
+
+## 📂 Project Structure
+
+```
+java-todo-list/
+├── src/
+│   └── Main.java     # App window, task list, and all Swing UI logic
+├── banner.png          # Screenshot used in this README
+└── README.md
+```
+
+## ⚙️ Installation Guide 🛠️
+
+### 1️⃣ Clone the Repository 📥
+```bash
+git clone https://github.com/Iqbolshoh/java-todo-list.git
+```
+
+### 2️⃣ Navigate to the Project Directory 📂
+```bash
+cd java-todo-list/src
+```
+
+### 3️⃣ Compile the Project 🧱
+```bash
+javac Main.java
+```
+
+### 4️⃣ Run the Application 🚀
+```bash
+java Main
+```
 
 ## 🖥 Technologies Used
-<div style="display: flex; flex-wrap: wrap; gap: 5px;">
-    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-    <img src="https://img.shields.io/badge/Swing-%23007396.svg?style=for-the-badge&logo=java&logoColor=white" alt="Swing">
-    <img src="https://img.shields.io/badge/AWT-%23FFA500.svg?style=for-the-badge&logo=java&logoColor=white" alt="AWT">
-</div>
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/Swing-%23007396.svg?style=for-the-badge&logo=java&logoColor=white)
+![AWT](https://img.shields.io/badge/AWT-%23FFA500.svg?style=for-the-badge&logo=java&logoColor=white)
 
 ## 📜 License
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the [MIT License](./LICENSE).
 
-## 🤝 Contributing  
+## 🤝 Contributing
 🎯 Contributions are welcome! If you have suggestions or want to enhance the project, feel free to fork the repository and submit a pull request.
 
-## 📬 Connect with Me  
-💬 I love meeting new people and discussing tech, business, and creative ideas. Let’s connect! You can reach me on these platforms:
+## 📬 Connect with Me
+💬 I love meeting new people and discussing tech, business, and creative ideas. Let's connect! You can reach me on these platforms:
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <a href="https://iqbolshoh.uz" target="_blank">
-          <img src="https://img.icons8.com/color/48/domain.png" 
-               height="40" width="40" alt="Website" title="Website" />
-        </a>
-      </td>
-      <td>
-        <a href="mailto:iilhomjonov777@gmail.com" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/gmail.svg"
-               height="40" width="40" alt="Email" title="Email" />
-        </a>
-      </td>
-      <td>
-        <a href="https://github.com/iqbolshoh" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
-               height="40" width="40" alt="GitHub" title="GitHub" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.linkedin.com/in/iqbolshoh/" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/linkedin.svg"
-               height="40" width="40" alt="LinkedIn" title="LinkedIn" />
-        </a>
-      </td>
-      <td>
-        <a href="https://t.me/iqbolshoh_777" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/telegram.svg"
-               height="40" width="40" alt="Telegram" title="Telegram" />
-        </a>
-      </td>
-      <td>
-        <a href="https://wa.me/998997799333" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/whatsapp.svg"
-               height="40" width="40" alt="WhatsApp" title="WhatsApp" />
-        </a>
-      </td>
-      <td>
-        <a href="https://instagram.com/iqbolshoh_777" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-               height="40" width="40" alt="Instagram" title="Instagram" />
-        </a>
-      </td>
-      <td>
-        <a href="https://x.com/iqbolshoh_777" target="_blank">
-          <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"
-               height="40" width="40" alt="X" title="X (Twitter)" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.youtube.com/@Iqbolshoh_777" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
-               height="40" width="40" alt="YouTube" title="YouTube" />
-        </a>
-      </td>
-    </tr>
-  </table>
+
+[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://iqbolshoh.uz)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iilhomjonov777@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iqbolshoh)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/templates_uz_support)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/998776030033)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/iqbolshoh.dev)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Iqbolshoh_dev)
+
 </div>
